@@ -52,7 +52,10 @@ const PostCard = ({post}) => {
                 <div className='text-gray-500 text-sm'>@{post.user.username} • {moment(post.createdAt).fromNow()}</div>
             </div>
         </div>
-         
+         {/* Content */}
+         {post.content && <div className='text-gray-800 text-sm whitespace-pre-line' dangerouslySetInnerHTML={{__html: postWithHashtags}}/>}
+
+       
 
 
     </div>
