@@ -55,7 +55,14 @@ const PostCard = ({post}) => {
          {/* Content */}
          {post.content && <div className='text-gray-800 text-sm whitespace-pre-line' dangerouslySetInnerHTML={{__html: postWithHashtags}}/>}
 
-       
+       {/* Images */}
+       <div className='grid grid-cols-2 gap-2'>
+            {post.image_urls.map((img, index)=>(
+                <img src={img} key={index} className={`w-full h-48 object-cover rounded-lg ${post.image_urls.length === 1 && 'col-span-2 h-auto'}`} alt="" />
+            ))}
+       </div>
+
+        
 
 
     </div>
