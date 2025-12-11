@@ -79,7 +79,10 @@ const StoryViewer = ({viewStory, setViewStory}) => {
         </div>
       </div>
 
-       
+       {/* Close Button */}
+       <button onClick={handleClose} className='absolute top-4 right-4 text-white text-3xl font-bold focus:outline-none'>
+        <X className='w-8 h-8 hover:scale-110 transition cursor-pointer'/>
+       </button>
 
        {/* Content Wrapper */}
        <div className='max-w-[90vw] max-h-[90vh] flex items-center justify-center'>
