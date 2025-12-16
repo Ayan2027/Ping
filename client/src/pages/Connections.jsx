@@ -82,7 +82,21 @@ const Connections = () => {
         ))}
       </div>
 
-       
+       {/* Tabs */}
+       <div className='inline-flex flex-wrap items-center border border-gray-200 rounded-md p-1 bg-white shadow-sm'>
+        {
+          dataArray.map((tab)=>(
+            <button onClick={()=> setCurrentTab(tab.label)} key={tab.label} className={`cursor-pointer flex items-center px-3 py-1 text-sm rounded-md transition-colors ${currentTab === tab.label ? 'bg-white font-medium text-black' : 'text-gray-500 hover:text-black'}`}>
+              <tab.icon className='w-4 h-4'/>
+              <span className='ml-1'>{tab.label}</span>
+              {tab.count !== undefined && (
+                <span className='ml-2 text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full'>{tab.count}</span>
+              )}
+            </button>
+          ))
+        }
+       </div>
+
        
 
       </div>
