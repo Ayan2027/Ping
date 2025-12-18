@@ -94,7 +94,16 @@ const CreatePost = () => {
 
                 <input type="file" id="images" accept='image/*' hidden multiple onChange={(e)=>setImages([...images, ...e.target.files])}/>
 
-                
+                <button disabled={loading} onClick={()=> toast.promise(
+                  handleSubmit(), 
+                  {
+                    loading: 'uploading ...',
+                    success: <p>Post Added </p>,
+                    error: <p>Post Not Added</p>,
+                  }
+                )} className='text-sm bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 active:scale-95 transition text-white font-medium px-8 py-2 rounded-md cursor-pointer'>
+                  Publish Post
+                </button>
               </div>
          </div>
       </div>
