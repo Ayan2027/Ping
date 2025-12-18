@@ -77,7 +77,15 @@ const UserCard = ({user}) => {
             </button>
             
 
-            
+            {/* Connection Request Button / Message Button */}
+            <button onClick={handleConnectionRequest} className='flex items-center justify-center w-16 border text-slate-500 group rounded-md cursor-pointer active:scale-95 transition'>
+                {
+                    currentUser?.connections.includes(user._id) ? 
+                    <MessageCircle className='w-5 h-5 group-hover:scale-105 transition'/>
+                    :
+                    <Plus className='w-5 h-5 group-hover:scale-105 transition'/>
+                }
+            </button>
         </div>
     </div>
   )
