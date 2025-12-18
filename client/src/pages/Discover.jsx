@@ -61,8 +61,15 @@ const Discover = () => {
         </div>
       </div>
 
-      
-      
+      <div className='flex flex-wrap gap-6'>
+        {users.map((user)=>(
+          <UserCard user={user} key={user._id}/>
+        ))}
+      </div>
+
+      {
+        loading && (<Loading height='60vh'/>)
+      }
 
       </div>
 
