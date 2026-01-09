@@ -27,66 +27,7 @@ The project is divided into **frontend (client)** and **backend (server)** with 
 
 ---
 
-## 📂 Project Structure
-# 🚀 PingUp – Full Stack MERN Social Media App
 
-PingUp is a **full-stack social networking application** built using the **MERN stack (MongoDB, Express, React, Node.js)** with **Clerk authentication**, supporting users, posts, stories, followers, connections, and real-time-ready architecture.
-
-The project is divided into **frontend (client)** and **backend (server)** with clean separation of concerns.
-
----
-
-## 🧩 Tech Stack
-
-### Frontend
-- ⚛️ React (Vite)
-- 🧭 React Router
-- 🔐 Clerk Authentication
-- 🎨 CSS / Tailwind (if used)
-- ⚡ Vite
-
-### Backend
-- 🟢 Node.js
-- 🚀 Express.js
-- 🍃 MongoDB + Mongoose
-- 🔐 Clerk (Auth)
-- 🖼️ ImageKit (Media uploads)
-- ⚙️ Inngest (Background jobs)
-- 📧 Nodemailer
-- 📂 Multer
-
----
-
-## 📂 Project Structure
-
-# 🚀 PingUp – Full Stack MERN Social Media App
-
-PingUp is a **full-stack social networking application** built using the **MERN stack (MongoDB, Express, React, Node.js)** with **Clerk authentication**, supporting users, posts, stories, followers, connections, and real-time-ready architecture.
-
-The project is divided into **frontend (client)** and **backend (server)** with clean separation of concerns.
-
----
-
-## 🧩 Tech Stack
-
-### Frontend
-- ⚛️ React (Vite)
-- 🧭 React Router
-- 🔐 Clerk Authentication
-- 🎨 CSS / Tailwind (if used)
-- ⚡ Vite
-
-### Backend
-- 🟢 Node.js
-- 🚀 Express.js
-- 🍃 MongoDB + Mongoose
-- 🔐 Clerk (Auth)
-- 🖼️ ImageKit (Media uploads)
-- ⚙️ Inngest (Background jobs)
-- 📧 Nodemailer
-- 📂 Multer
-
----
 
 ## 📂 Project Structure
 ```
